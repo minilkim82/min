@@ -36,8 +36,8 @@ if __name__ == '__main__':
 	method = 'GET'				 #정보를 얻는것이기 때문에 GET
 	keyword = '마사지건' #검색할 키워드, 쿠팡에서 검색하는거랑 결과가 동일합니다.
 	limit = 10					 #몇개의 정보를 가져올지 설정. 상위부터 가져옵니다.
-	access_key = 'bc1ca022-49bd-4d67-84d4-156fee798a50'			#API access key
-	secret_key = '8451b806f055c84cf25d911b53f3b4d9c6553e2c'		#API secret key
+	access_key = ''			#API access key
+	secret_key = ''		#API secret key
 	URL = "/v2/providers/affiliate_open_api/apis/openapi/products/search?keyword=" + urllib.parse.quote(keyword) + "&limit=" + str(limit)
 
 	test = cupangMgr()
